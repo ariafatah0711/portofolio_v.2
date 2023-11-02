@@ -94,6 +94,9 @@ main {
 .section-1 .article p {
     opacity: 60%; text-align: justify;
 }
+.section-1 .article-description p a {
+    margin-right: 10px; font-size: 80%;
+}
 
 .article-language {
     display: grid; flex-direction: row; grid-template-columns: 50% 50%; gap: 50px;
