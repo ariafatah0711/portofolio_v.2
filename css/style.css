@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --text: #ffffff;
+    --main-col: #d3ad7f;
+    --bg-col: ;
+
+    --header: 75px;
+
+    --brd: 0.1px solid grey;
+}
+
+* {
+    font-family: 'Poppins', Tahoma ,sans-serif;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    outline: none; text-decoration: none;
+    border: none; list-style-type: none;
+    user-select: none;
+}
+
+body {
+    background: #272727;
+    padding: 0 12.5%;
+
+    height: 1000px;
+}
+
+a {color: var(--text);}
+a:active, .navbar ul a:any-link {color: var(--text);}
+.profil:hover, .navbar li a:hover {
+    color: var(--main-col);
+}
+
+
+/* class */
+.center {display: flex; flex-direction: row; justify-content: center; align-items: center;}
+
+/* header */
+header {
+    height: 75px; width: 80%;
+    border-bottom: 1px solid #4D4D4D;
+    color: var(--text);
+    justify-content: space-between !important;
+    position: fixed; top: 0;
+}
+.profil {font-size: 24px;}
+.navbar {
+    height: inherit; width: auto;
+    font-size: 16px; gap: 36px;
+    opacity: 85%;
+}
+
+
+
+
+
+
+/* main */
+main {
+    margin-top: var(--header);
+}
+
+/* section-1 */
+.section-1 h1, .section-1 .article {margin: auto 0;}
+.section-1 {
+    height: calc(100vh - var(--header)); width: 100%;
+    display: flex; flex-direction: column; align-items: center;
+
+    /* border: var(--brd); */
+}
+.section-1 h1 {
+    width: 100%;
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#52EE84, #4CA9FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-1 .article {
+    height: auto; width: 100%;
+    display: grid; flex-direction: row; grid-template-columns: 20% 50% 30%; gap: 50px;
+    color: var(--text); opacity: 75%;
+
+    /* border: var(--brd); */
+}
+
+.section-1 .article-image {position: relative;}
+.section-1 .article-image img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+.section-1 .article p {
+    opacity: 60%; text-align: justify;
+}
+
+.article-language {
+    display: grid; flex-direction: row; grid-template-columns: 50% 50%; gap: 50px;
+}
+
+.article-1 {}
+.article-2 {
+    height: auto; width: 100%;
+    display: grid; grid-template-columns: 100% !important;
+}
+
+img {
+    /* height: 50px; */
+}
