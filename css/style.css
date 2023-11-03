@@ -214,7 +214,7 @@ section p {
 /* Tablet styles */
 @media screen and (min-width: 767px) and (max-width: 1023px) {
     html {
-        font-size: 80%;
+        font-size: 85%;
     }
 }
 
@@ -298,5 +298,11 @@ section p {
     .section-2 .card {
         flex-direction: column; gap: 0;
         align-items: flex-start;
+    }
+}
+
+@media screen and (min-height: 900) {
+    section {
+        height: 100%;
     }
 }
