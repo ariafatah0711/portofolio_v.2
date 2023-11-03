@@ -16,7 +16,14 @@
             ariafatah
         </div>
 
-        <ul class="navbar center">
+        <!-- <input type="checkbox" name="navbar" id="btn-navbar">
+        <label for="btn-navbar" class="fa-solid fa-list icon-navbar fa-2x"></label> -->
+
+        <a onclick="showNavbar()" id="btn-navbar">
+            <i class="fa-solid fa-list icon-navabr fa-2x"></i>
+        </a>
+
+        <ul class="navbar center hidden" id="navbar">
             <li><a href="#about">about</a></li>
             <li><a href="#experience">experience</a></li>
             <li><a href="#project">project</a></li>
@@ -25,7 +32,7 @@
     </header>
 
     <main>
-        <section id="" class="section-1">
+        <section id="about" class="section-1">
             <h1>
                 Hi Im ariafatah, <br>
                 I'am Front End Developer
@@ -36,12 +43,12 @@
                     <img src="./asset/profil.png" alt="ariafatah">
                 </div>
 
-                <div class="article-description">
+                <div class="article-box">
                     <h2>Biography</h2>
                     <p>I am a 17 year old Front End Developer currently attending SMK Harapan Bangsa. I have been actively learning in the world of web development since January 2023.</p>
                 </div>
                 
-                <nav class="article-description">
+                <nav class="article-box span-2">
                     <h2>Lets Connect</h2>
                     <p>
                         <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
@@ -53,7 +60,7 @@
             </div>
 
             <div class="article article-2">
-                <div class="article-description">
+                <div class="article-box">
                     <h2>What I Do</h2>
                     <div class="article-language">
                         <p>Build and maintain websites, frontend dev also have programming languages like HTML, CSS, JavaScript, and Python, I also have knowledge of networking and other skills.</p>
@@ -68,17 +75,20 @@
                             <img alt="cisco" src="https://img.shields.io/badge/-Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white" />
                             <img alt="linux" src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
                         </div>
-
                     </div>
-                </div>
-                <div class="article-description">
                 </div>
             </div>
 
         </section>
 
+        <section id="project" class="section-2">
+            ariafatah
+        </section>
 
     </main>
     
+    <!-- script -->
+    <script src="./script/script.js"></script>
+
 </body>
 </html>
