@@ -16,6 +16,7 @@
     border: none;
     list-style-type: none;
     user-select: none;
+    color: var(--text);
 }
 
 html {
@@ -37,10 +38,15 @@ a:active, .navbar ul a:any-link {
     color: var(--text);
 }
 
-.profil:hover, .navbar li a:hover {
+.profil:hover, 
+.navbar li a:hover, 
+a:hover i, 
+a:hover
+{
     color: var(--main-col);
 }
 
+/* class */
 .center {
     display: flex;
     flex-direction: row;
@@ -48,6 +54,7 @@ a:active, .navbar ul a:any-link {
     align-items: center;
 }
 
+/* __________ header __________*/
 header {
     height: var(--header);
     width: calc(100% - (12.5% * 2));
@@ -80,12 +87,9 @@ header {
     z-index: 11;
 }
 
+/* __________ main __________*/
 main {
     margin-top: var(--header);
-}
-
-.section-1 h1, .section-1 .article {
-    /* margin: auto 0; */
 }
 
 .section-1 {
@@ -120,6 +124,10 @@ main {
     border-radius: 50%;
 }
 
+.section-1 .article-box p {
+    display: flex; gap: 10px;
+}
+
 .section-1 .article p {
     opacity: 60%;
     text-align: justify;
@@ -141,7 +149,7 @@ main {
 
 /* Desktop styles */
 @media screen and (min-width: 767px) {
-    .section-1 {
+    section {
         height: calc(100vh - var(--header));
     }
 }
@@ -194,10 +202,6 @@ main {
         height: calc(100vh - var(--header));
         padding-bottom: 50px;
         gap: 10px;
-    }
-
-    .section-1 .article p {
-        justify-content: flex-end;
     }
 
     .article-1 {

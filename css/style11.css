@@ -117,6 +117,9 @@ main {
 .section-1 .article p {
     opacity: 60%; text-align: justify;
 }
+.section-1 .span-2 {
+    
+}
 .section-1 .article-box p a {
     margin-right: 10px; font-size: 80%;
 }
@@ -190,13 +193,16 @@ main {
     .section-1 .article p {
         justify-content: flex-end;
     }
+    .section-1 .span-2 {
+        
+    } 
     .article-1 {
         grid-template-columns: 100% !important;
         /* grid-template-columns: 20% 70% !important; */
     }
     .span-2 {
         /* grid-column: span 2; */
-        right: 0;
+        /* right: 0; */
     }
     .article-1 img {height: 150px !important;}
     .article-2 {
