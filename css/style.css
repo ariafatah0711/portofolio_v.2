@@ -4,6 +4,8 @@
     --text: #ffffff;
     --main-col: #d3ad7f;
     --header: 75px;
+
+    --brd: 0.1px solid grey;
 }
 
 * {
@@ -28,6 +30,7 @@ body {
     background: #272727;
     padding: 0 12.5%;
     min-height: 100vh;
+    position: relative;
 }
 
 a {
@@ -41,7 +44,8 @@ a:active, .navbar ul a:any-link {
 .profil:hover, 
 .navbar li a:hover, 
 a:hover i, 
-a:hover
+a:hover,
+a:hover h2
 {
     color: var(--main-col);
 }
@@ -91,6 +95,13 @@ header {
 main {
     margin-top: var(--header);
 }
+section h2 {
+    opacity: 75%;
+}
+section p {
+    opacity: 50%;
+    text-align: justify;
+}
 
 .section-1 {
     height: calc(100vh - var(--header));
@@ -112,15 +123,17 @@ main {
     width: 100%;
     display: grid;
     color: var(--text);
-    opacity: 75%;
+    gap: 50px; row-gap: 0;
 }
 
 .article-image, .article-box {
-    padding: 5px 20px;
+    padding: 5px 0;
 }
 
 .section-1 .article-image img {
     height: 150px;
+    border: 2.5px solid greenyellow;
+    /* border-image: linear-gradient(10deg, rgb(0,143,104), rgb(250,224,66)) 1; */
     border-radius: 50%;
 }
 
@@ -130,12 +143,12 @@ main {
 
 .section-1 .article p {
     opacity: 60%;
-    text-align: justify;
 }
 
 .article-language {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% calc(50% - 50px);
+    justify-content: space-between;
     gap: 50px;
 }
 
@@ -145,6 +158,45 @@ main {
 
 .article-2 {
     grid-template-columns: 100% !important;
+}
+
+/* section-2 */
+.section-2 {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section-2 > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.section-2 .card {
+    display: flex; flex-direction: row;
+    justify-content: space-between; align-items: flex-start;
+    gap: 20px;
+    overflow-y: hidden;
+}
+
+.section-2 .card-image {
+    position: relative;
+    min-width: 100px !important;
+    max-width: 300px !important;
+}
+.section-2 .card-image img {
+    width: 100%;
+}
+.section-2 .card-text {
+    flex-grow: 1;
+    flex-shrink: 10;
+}
+.section-2 .card-text h4 {
+    text-transform: uppercase;
+}
+.section-2 .card:hover {
+    background: #1b1a1a;
 }
 
 /* Desktop styles */
@@ -194,13 +246,17 @@ main {
         background: #272727;
     }
 
+    section {
+        height: 100% !important;
+    }
+
+    /* section-1 */
     .section-1 h1 {
         font-size: 2rem;
     }
 
     .section-1 {
         height: calc(100vh - var(--header));
-        padding-bottom: 50px;
         gap: 10px;
     }
 
@@ -231,5 +287,11 @@ main {
         flex-grow: 1;
         justify-content: left;
         gap: 5px 5px;
+    }
+
+    /* section-2 */
+    .section-2 .card {
+        flex-direction: column; gap: 0;
+        align-items: flex-start;
     }
 }
