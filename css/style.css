@@ -100,12 +100,16 @@ header {
 main {
     margin-top: var(--header);
 }
-section h2 {
+section h2,
+section h4 {
     opacity: 75%;
 }
 section p {
     opacity: 50%;
     text-align: justify;
+}
+.section-2 h1 {
+    opacity: 60% !important;
 }
 
 .section-1 {
@@ -301,8 +305,11 @@ section p {
     }
 }
 
-@media screen and (min-height: 800) {
+/* mobile desktop */
+@media screen and (min-height: 800px) {
     section {
+        min-height: 1px !important;
+        max-height: auto !important; 
         height: 100% !important;
     }
 }
