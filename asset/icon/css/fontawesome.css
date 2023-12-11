@@ -65,6 +65,7 @@
 .fa-10x {
   font-size: 10em; }
 
+/*
 .fa-2xs {
   font-size: 0.625em;
   line-height: 0.1em;
@@ -490,9 +491,6 @@
 
 .fa-inverse {
   color: var(--fa-inverse, #fff); }
-
-/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-readers do not read off random characters that represent icons */
 
 .fa-0::before {
   content: "\30"; }
@@ -6366,4 +6364,6 @@ readers do not read off random characters that represent icons */
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  border-width: 0; }
+  border-width: 0; } 
+
+  */

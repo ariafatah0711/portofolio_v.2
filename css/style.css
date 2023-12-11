@@ -257,6 +257,12 @@ section p {
     html {
         font-size: 85%;
     }
+    body {
+        padding: 0 5%;
+    }
+    header {
+        width: calc(100% - (5% * 2));
+    }
 }
 
 /* Mobile styles */
