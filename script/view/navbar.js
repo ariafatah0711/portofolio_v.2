@@ -13,11 +13,14 @@ aAll.forEach((a) => {
 /* scroll smoth navbar */
 // Check if the hash exists in the URL and navigate smoothly to the target
 document.addEventListener("DOMContentLoaded", function () {
-  const targetElement = document.querySelector(window.location.hash);
-  if (targetElement) {
-    targetElement.scrollIntoView({
-      behavior: "smooth",
-    });
+  const hash = window.location.hash;
+  if (hash) {
+    const targetElement = document.querySelector(hash);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   }
 });
 
