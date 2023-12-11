@@ -22,11 +22,11 @@ const showSection = {
         projectHTML += `
             <a href="${project.src.href}" class="card">
                 <div class="card-image">
-                    <img src="${project.src.image}">
+                    <img alt="image-project" src="${project.src.image}">
                 </div>
                 <div class="card-text">
-                    <h4>${project.date}</h4>
-                    <h1>${project.tittle}</h1>
+                    <h1>${project.date}</h1>
+                    <h2>${project.tittle}</h2>
                     <p>
                         ${project.description}
                     </p>
@@ -39,11 +39,11 @@ const showSection = {
         projectHTML += `
         <a href="${projects[i].src.href}" class="card">
             <div class="card-image">
-                <img src="${projects[i].src.image}">
+                <img alt="image-project" src="${projects[i].src.image}">
             </div>
             <div class="card-text">
-                <h4>${projects[i].date}</h4>
-                <h1>${projects[i].tittle}</h1>
+                <h1>${projects[i].date}</h1>
+                <h2>${projects[i].tittle}</h2>
                 <p>
                     ${projects[i].description}
                 </p>
