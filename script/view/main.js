@@ -14,7 +14,7 @@ const showSection = {
   showProject: (nav, tittle, count = 0) => {
     projectHTML = `
       <a href="${nav}">
-      <h2>${tittle}</h2> <i class="fa-solid fa-arrow-right"></i>
+      <h2>${tittle}</h2>
       </a>
     `;
     if (count == 0) {
