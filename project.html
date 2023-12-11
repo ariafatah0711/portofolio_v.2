@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <style>.section-2 {height: auto !important;}</style>
     <!-- font awosome -->
-    <link href="./asset/icon/css/fontawesome.css" rel="stylesheet">
-    <link href="./asset/icon/css/solid.css" rel="stylesheet">
+    <link preload href="./asset/icon/css/fontawesome.css" rel="stylesheet">
+    <link preload href="./asset/icon/css/solid.css" rel="stylesheet">
+    <!-- preload -->
+    <link rel="preload" fetchpriority="high" as="image" href="./asset/image/project-2.webp" type="image/webp">
 </head>
 <body>
     
@@ -30,11 +32,11 @@
     </main>
     
     <!-- data -->
-    <script src="./script/data/project.js"></script>
+    <script preload src="./script/data/project.js"></script>
 
     <!-- view -->
-    <script src="./script/view/main.js"></script>
-    <script src="./script/view/view-project.js"></script>
+    <script preload src="./script/view/main.js"></script>
+    <script preload src="./script/view/view-project.js"></script>
 
 </body>
 </html>
