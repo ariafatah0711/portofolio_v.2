@@ -87,7 +87,7 @@ header {
     gap: 36px;
 }
 
-.navbar a, section > a > i {
+.navbar a, section > a > i, .navbar i {
     opacity: 85%;
 }
 
@@ -231,6 +231,10 @@ section p {
 @media screen and (min-width: 767px) {
     section {
         height: calc(100vh - var(--header));
+    }
+    header {
+        width: calc(100% - (11% * 2));
+        transform: translateX(-5px);
     }
 }
 
