@@ -7,7 +7,7 @@ const showSection = {
   showProfil: () => {
     skills.forEach((skill) => {
       articleLanguageHTML += `
-            <img alt="${skill.alt}" src="${skill.src}">
+            <img alt="${skill.alt}" src="${skill.src}" height="auto" width="auto">
           `;
     });
   },
