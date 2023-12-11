@@ -13,7 +13,7 @@ const projects = [
     date: "july 2023",
     src: {
       href: "https://ariafatah0711.github.io/portofolio_v.1/",
-      image: "./asset/image/project-2.webp",
+      image: "./asset/image/project-2.png",
     },
     description: "my portofolio v.1 with html, css",
   },
