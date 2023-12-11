@@ -1,4 +1,3 @@
-// navbar
 const navbar = document.getElementById("navbar");
 const aAll = document.querySelectorAll(".navbar a");
 

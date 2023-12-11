@@ -87,13 +87,32 @@ header {
     gap: 36px;
 }
 
-.navbar a {
+.navbar a, section > a > i {
     opacity: 85%;
 }
 
 #btn-navbar {
     display: none;
     z-index: 11;
+}
+
+.navbar a {
+    position: relative;
+}
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background: var(--main-col);
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    color: var(--main-col);
 }
 
 /* __________ main __________*/
@@ -244,6 +263,7 @@ section p {
     }
     .navbar {
         height: calc(100vh - var(--header));
+        padding-top: 20px;
         width: 100%;
         position: absolute;
         top: var(--header);
