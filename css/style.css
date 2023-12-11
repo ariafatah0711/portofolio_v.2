@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* @font-face {
+    font-family: 'Poppins';
+    src: url('../asset/font/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+} */
 
 :root {
     --text: #ffffff;
