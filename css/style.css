@@ -142,10 +142,13 @@ section p {
 .section-1 h1 {
     width: 100%;
     font-size: 3rem;
-    background: -webkit-linear-gradient(#52EE84, #4CA9FF);
+    background: linear-gradient(#52EE84, #4CA9FF);
+    background-clip: text;
+    color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 .section-1 .article {
     width: 100%;
