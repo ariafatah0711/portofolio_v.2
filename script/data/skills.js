@@ -12,12 +12,20 @@ const skills = [
     src: "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black",
   },
   {
+    alt: "bootstrap",
+    src: "https://img.shields.io/badge/-Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white",
+  },
+  {
     alt: "jQuery",
     src: "https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white",
   },
   {
-    alt: "bootstrap",
-    src: "https://img.shields.io/badge/-Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white",
+    alt: "node.js",
+    src: "https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white",
+  },
+  {
+    alt: "npm",
+    src: "https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm&logoColor=white",
   },
   {
     alt: "php",
