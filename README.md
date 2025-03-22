@@ -28,7 +28,7 @@ This is the second version of my web portfolio, crafted with HTML, CSS, and JS. 
 <details id="back" open>
   <summary><b>Preview</b></summary>
 
-  <img src="./asset/image/portofolio_v.2.png">
+  <img src="./preview.png">
 </details>
 
 <p id="download"></p>
